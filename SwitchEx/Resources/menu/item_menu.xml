@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- Add menu Item 1 -->
+	<item android:id="@+id/Search"
+		  android:title="@string/menuItem1"/>
+
+	<!-- Add menu Item 2 -->
+	<item android:id="@+id/Edit"
+		   android:title="@string/menuItem2"/>
+
+	<!-- Add menu Item 3 -->
+	<item android:id="@+id/Share"
+		  android:title="@string/menuItem3"/>
+
+	<!-- Add menu Item 4 -->
+	<item android:id="@+id/History"
+		  android:title="@string/menuItem4"/>
+
+	<!-- Add menu Item 5 -->
+	<item android:id="@+id/Delete"
+		  android:title="@string/menuItem5"/>
+
+	<!-- Add menu Item 6 -->
+	<item android:id="@+id/Block"
+		  android:title="@string/menuItem6"/>
+
+</menu>

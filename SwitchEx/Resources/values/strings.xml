@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SwitchEx</string>
+    <string name="action_settings">Settings</string>
+
+	<string name="menuItem1">Search</string>
+	<string name="menuItem2">Edit</string>
+	<string name="menuItem3">Share</string>
+	<string name="menuItem4">History</string>
+	<string name="menuItem5">Delete</string>
+	<string name="menuItem6">Block</string>
+</resources>
