@@ -22,7 +22,7 @@
 	</solid>
 
 	<stroke
-		android:color="@color/colorPrimary"
+		android:color="@color/lightGray"
 		android:width="2dp"
 		>
 	</stroke>
