@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+   android:background="@drawable/backgRound"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textStyle="bold"
+         android:textSize="11sp"
+        android:id="@+id/textviewitem1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="i have to visit a family function"
+        />
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/textviewitem2"
+        app:layout_constraintTop_toBottomOf="@id/textviewitem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wed,16 feb"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/textviewitem3"
+        android:textColor="@android:color/holo_blue_bright"
+        app:layout_constraintTop_toBottomOf="@id/textviewitem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Half day"
+        />
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Pending"
+        app:cornerRadius="5dp"
+        android:textSize="10sp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        app:strokeWidth="0dp"
+        android:id="@+id/textviewitem4"
+        android:layout_width="80dp"
+        android:layout_height="40dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textviewitem5"
+        android:backgroundTint="@android:color/white"
+        app:cornerRadius="5dp"
+        android:textSize="11sp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@android:color/holo_blue_bright"
+        app:layout_constraintTop_toBottomOf="@id/textviewitem4"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="Revoke"
+        android:textColor="@android:color/holo_blue_bright"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
