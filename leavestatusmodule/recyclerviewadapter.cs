@@ -61,8 +61,13 @@ namespace leavestatusmodule
 
         private void configureViewHolder2(MyViewHolder2 vh2, int position)
         {
-            vh2.monthnameTextView.Text = leavelist[position].seperatordate;
+            //vh2.monthnameTextView.Text = leavelist[position].seperatordate;
             vh2.monthtext2.Text = leavelist[position].day;
+            vh2.reaasonTextView2.Text = leavelist[position].reason;
+            vh2.dayDateTextview2.Text = leavelist[position].date;
+            vh2.typeofleaveTextview2.Text = leavelist[position].typeofleave;
+            vh2.leavestatusbutton2.Text = leavelist[position].statusofleave;
+            vh2.revokebutton2.Text = leavelist[position].buttontext;
         }
 
         private void configureViewHolder1(MyViewHolder vh1, int position)
@@ -120,12 +125,19 @@ namespace leavestatusmodule
         }
         public class MyViewHolder2 : RecyclerView.ViewHolder
         {
+            public Button leavestatusbutton2, revokebutton2;
+            public TextView reaasonTextView2, dayDateTextview2, typeofleaveTextview2;
             //private readonly Action<int> listener;
             public TextView monthnameTextView,monthtext2;
             public MyViewHolder2(View itemView) : base(itemView)
             {
-                monthnameTextView = itemView.FindViewById<TextView>(Resource.Id.monthid);
+                //monthnameTextView = itemView.FindViewById<TextView>(Resource.Id.monthid);
                 monthtext2 = itemView.FindViewById<TextView>(Resource.Id.monthid2);
+                reaasonTextView2 = itemView.FindViewById<TextView>(Resource.Id.textviewitem1);
+                dayDateTextview2 = itemView.FindViewById<TextView>(Resource.Id.textviewitem2);
+                typeofleaveTextview2= itemView.FindViewById<TextView>(Resource.Id.textviewitem3);
+                leavestatusbutton2 = itemView.FindViewById<Button>(Resource.Id.textviewitem4);
+                revokebutton2 = itemView.FindViewById<Button>(Resource.Id.textviewitem5);
             }
 
 
