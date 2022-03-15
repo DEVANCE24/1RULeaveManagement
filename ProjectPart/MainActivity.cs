@@ -40,7 +40,9 @@ namespace ProjectPart
 
         private void _myTabSelected(object sender, TabLayout.TabSelectedEventArgs e)
         {
-            
+            Fragment1 frag = new Fragment1();
+            var trans = SupportFragmentManager.BeginTransaction();
+            frag
         }
         private void setTabName()
         {

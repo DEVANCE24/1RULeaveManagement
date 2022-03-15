@@ -12,7 +12,7 @@ using System.Text;
 
 namespace ProjectPart
 {
-    public class FragmentLeaveLayout : Fragment
+    public class Fragment1 : Fragment
     {
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -24,7 +24,7 @@ namespace ProjectPart
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             // Use this to return your custom view for this Fragment
-             return inflater.Inflate(Resource.Layout.LeaveLayout, container, false);
+            return inflater.Inflate(Resource.Layout.LeaveLayout, container, false);
 
             return base.OnCreateView(inflater, container, savedInstanceState);
         }
