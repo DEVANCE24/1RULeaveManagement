@@ -46,23 +46,26 @@ namespace leavestatusmodule
                     configureViewHolder2(viewholder2, position);
                     break;
             }
-            //MyViewHolder vh1 = holder as MyViewHolder;
-           
-            //vh1.reaasonTextView.Text = leavelist[position].reason;
-            //vh1.dayDateTextview.Text = leavelist[position].date;
-            //vh1.typeofleaveTextview.Text = leavelist[position].typeofleave;
-            //vh1.leavestatusbutton.Text = leavelist[position].statusofleave;
-            //vh1.revokebutton.Text = leavelist[position].buttontext;
-            //MyViewHolder2 vh2 = holder as MyViewHolder2;
-            //vh2.monthnameTextView.Text = leavelist[position].seperatordate;
+            
         }
 
 
 
         private void configureViewHolder2(MyViewHolder2 vh2, int position)
         {
-            //vh2.monthnameTextView.Text = leavelist[position].seperatordate;
-            vh2.monthtext2.Text = leavelist[position].day;
+              if (leavelist[position].statusofleave.Trim() == "pending")
+            {
+                
+                vh2.leavestatusbutton2.SetTextColor(Android.Graphics.Color.ParseColor("#FF6A00"));
+                
+                vh2.leavestatusbutton2.SetBackgroundResource(Resource.Drawable.buttonstroke3);
+            }
+            else if (leavelist[position].statusofleave.Trim() == "accepted")
+            {
+                vh2.leavestatusbutton2.SetTextColor(Android.Graphics.Color.ParseColor("#4D94FF"));
+                vh2.leavestatusbutton2.SetBackgroundResource(Resource.Drawable.buttonstroke2);
+            }
+            vh2.monthtext2.Text = leavelist[position].seperatordate;
             vh2.reaasonTextView2.Text = leavelist[position].reason;
             vh2.dayDateTextview2.Text = leavelist[position].date;
             vh2.typeofleaveTextview2.Text = leavelist[position].typeofleave;
@@ -72,6 +75,17 @@ namespace leavestatusmodule
 
         private void configureViewHolder1(MyViewHolder vh1, int position)
         {
+             if (leavelist[position].statusofleave.Trim() == "pending")
+            {
+
+                vh1.leavestatusbutton.SetTextColor(Android.Graphics.Color.ParseColor("#FF6A00"));
+                vh1.leavestatusbutton.SetBackgroundResource(Resource.Drawable.buttonstroke3);
+            }
+            else if (leavelist[position].statusofleave.Trim() == "accepted")
+            {
+                vh1.leavestatusbutton.SetTextColor(Android.Graphics.Color.ParseColor("#4D94FF"));
+                vh1.leavestatusbutton.SetBackgroundResource(Resource.Drawable.buttonstroke2);
+            }
             vh1.reaasonTextView.Text = leavelist[position].reason;
             vh1.dayDateTextview.Text = leavelist[position].date;
             vh1.typeofleaveTextview.Text = leavelist[position].typeofleave;
@@ -83,12 +97,11 @@ namespace leavestatusmodule
         public override int GetItemViewType(int position)
         {
             if(leavelist[position].seperatordate != "" )
-                return USER;
-            else
                 return IMAGE;
+            else
+                return  USER;
 
         }
-
 
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
@@ -131,7 +144,7 @@ namespace leavestatusmodule
             public TextView monthnameTextView,monthtext2;
             public MyViewHolder2(View itemView) : base(itemView)
             {
-                //monthnameTextView = itemView.FindViewById<TextView>(Resource.Id.monthid);
+                
                 monthtext2 = itemView.FindViewById<TextView>(Resource.Id.monthid2);
                 reaasonTextView2 = itemView.FindViewById<TextView>(Resource.Id.textviewitem1);
                 dayDateTextview2 = itemView.FindViewById<TextView>(Resource.Id.textviewitem2);
