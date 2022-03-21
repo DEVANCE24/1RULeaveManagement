@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DashBoard</string>
+    <string name="action_settings">Settings</string>
+	<string name="dashboard">Dashboard</string>
+	<string name="status">Status</string>
+	<string name="profile">Profile</string>
+	<string name="leaveRequest">Leave Requests</string>
+	<string name="wfhRequests">WFH Requests</string>
+	<string name="leaveStatus">Leave Status</string>
+	<string name="pendingRequest">Pending Requests</string>
+	<string name="rejectRequest">Reject Requests</string>
+	<string name="acceptedRequest">Accepted Requests</string>
+	<string name="minValueText00">00</string>
+	<string name="listOfHolidays">List of Holidays</string>
+</resources>
