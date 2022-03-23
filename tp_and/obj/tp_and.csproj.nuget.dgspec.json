@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\priyank.patel\\source\\repos\\tp_and\\tp_and\\tp_and.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\priyank.patel\\source\\repos\\tp_and\\tp_and\\tp_and.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\priyank.patel\\source\\repos\\tp_and\\tp_and\\tp_and.csproj",
+        "projectName": "tp_and",
+        "projectPath": "C:\\Users\\priyank.patel\\source\\repos\\tp_and\\tp_and\\tp_and.csproj",
+        "packagesPath": "C:\\Users\\priyank.patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\priyank.patel\\source\\repos\\tp_and\\tp_and\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\priyank.patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid11.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid11.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid11.0": {
+          "dependencies": {
+            "Syncfusion.Xamarin.SfChart": {
+              "target": "Package",
+              "version": "[19.4.0.56, )"
+            },
+            "Xamarin.AndroidX.AppCompat": {
+              "target": "Package",
+              "version": "[1.2.0.5, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.Google.Android.Material": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
