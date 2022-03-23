@@ -8,23 +8,27 @@
 
     <TextView
         
-        android:id="@+id/textViewHolidays"
+        android:id="@+id/textViewInterNameMoreLeave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textStyle="bold"
+        android:text="hi"
         android:textColor="@color/sonicSilver"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
-        android:id="@+id/texViewHolidayDate"
+        android:id="@+id/textViewTotalMoreLeaves"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="10sp"
         android:textStyle="bold"
-        android:textColor="@color/green"
+        android:text="hi"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:background="@drawable/ic_bluecircle_mentors"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

@@ -4,7 +4,7 @@
 	<string name="dashboard">Dashboard</string>
 	<string name="status">Status</string>
 	<string name="profile">Profile</string>
-	<string name="leaveRequest">Leave Requests</string>
+	<string name="leaveRequests">Leave Requests</string>
 	<string name="wfhRequests">WFH Requests</string>
 	<string name="leaveStatus">Leave Status</string>
 	<string name="pendingRequest">Pending Requests</string>
@@ -12,4 +12,11 @@
 	<string name="acceptedRequest">Accepted Requests</string>
 	<string name="minValueText00">00</string>
 	<string name="listOfHolidays">List of Holidays</string>
+	<string name="totalLeaves">Total Leaves</string>
+	<string name="totalCountLeaves">20</string>
+	<string name="interns">Interns</string>
+	<string name="leaveRequest">Leave Request</string>
+	<string name="moreLeaves">Intern who has asked more leaves</string>
+	<string name="lessLeaves">Intern who has asked less leaves</string>
+	<string name="request">Requests</string>
 </resources>

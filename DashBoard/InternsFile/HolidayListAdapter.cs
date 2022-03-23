@@ -30,16 +30,15 @@ namespace DashBoard
         {
             ViewHolderHolidayList _holidayListHolder = holder as ViewHolderHolidayList;
             _holidayListHolder.BindData(holidaylist[position]);
+            _holidayListHolder._holidaydateTextView.SetBackgroundResource(holidaylist[position].backgroundcolor);
             if (position % 2 != 0)
             {
-
-                _holidayListHolder._holidaydateTextView.SetBackgroundResource(Resource.Drawable.shape_rect_orange);
                 _holidayListHolder._holidaydateTextView.SetTextColor(context.Resources.GetColor(Resource.Color.orange));
             }
             else
             {
 
-                _holidayListHolder._holidaydateTextView.SetBackgroundResource(Resource.Drawable.shape_rect_green);
+                
                 _holidayListHolder._holidaydateTextView.SetTextColor(context.Resources.GetColor(Resource.Color.green));
             }
         }

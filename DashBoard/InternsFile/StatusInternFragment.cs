@@ -27,7 +27,7 @@ namespace DashBoard
         {
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
+          
             return inflater.Inflate(Resource.Layout.statusInternsFragment, container, false);
         }
     }
