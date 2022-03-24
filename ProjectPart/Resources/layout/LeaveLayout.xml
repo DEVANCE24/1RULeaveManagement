@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     
 >
@@ -16,106 +16,106 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
     >
         <RadioButton
+            android:id="@+id/radioButtonOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Full Day"
+            android:text="@string/fullDay"
+            android:padding="5dp"
         />
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1st Half Day"
-            android:id="@+id/radioButton2" 
+            android:text="@string/firstHalf"
+            android:id="@+id/radioButton2"
+            android:padding="5dp"
         />
         <RadioButton
+            android:id="@+id/radioButtonThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2nd Half Day"
+            android:text="@string/secondHalf"
+            android:padding="5dp"
         />
-        
+
     </RadioGroup>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintTop_toTopOf="@+id/radioGroup"        
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="20dp"
-        app:cardCornerRadius="12dp"
-    >
-    <EditText
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/leaveTypeReasonCardView"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:cardCornerRadius="12dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/typeReason"
+            android:inputType="textMultiLine"
+            android:backgroundTint="@android:color/white"
+            android:maxLines="10"
+           />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type Your Reason For Leave"
-        app:layout_constraintStart_toStartOf="parent"    
-        android:inputType="textMultiLine"
-        android:backgroundTint="@android:color/white"
-        android:maxLines="10"
-        android:padding="20dp"
-    />
-    </androidx.cardview.widget.CardView>
-    
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="20dp"
-        android:padding="10dp"
-        app:cardCornerRadius="12dp"
-        >
-        <ImageView
-            android:layout_marginTop="7dp"
-            android:layout_marginLeft="5dp"
-            android:id="@+id/imageViewFromCalender"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_calender_from"
-        />
-        <TextView
-            android:id="@+id/textViewFromDate"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/leaveFromDateSelectCardView"
+        app:layout_constraintTop_toBottomOf="@+id/leaveTypeReasonCardView"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:hint="Select Data Hear"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageViewFromCalender"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calender_from"
         />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageViewFromCalender"
+                android:id="@+id/textViewFromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="@string/fromDate"/>
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="150dp"
-        android:padding="10dp"
-        app:cardCornerRadius="12dp"
-        >
-        <ImageView
-            android:layout_marginTop="7dp"
-            android:layout_marginLeft="5dp"
-            android:id="@+id/imageViewToCalender"
-            android:layout_width="50dp"
-            android:layout_height="30dp"
-            android:src="@drawable/ic_calender_to"
-        />
-        <TextView
-            android:id="@+id/textViewToDate"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/leaveFromDateSelectCardView"
+        app:cardCornerRadius="12dp">
+        <RelativeLayout
+            android:padding="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:hint="Select Data Hear"
+            android:layout_height="match_parent">
+            <ImageView
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imageViewToCalender"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calender_to"
         />
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageViewToCalender"
+                android:id="@+id/textViewToDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="@string/toDate"
+        />
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
