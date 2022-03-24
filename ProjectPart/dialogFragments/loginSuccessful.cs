@@ -20,6 +20,7 @@ namespace ProjectPart.dialogFragments
     public class loginSuccessful : DialogFragment
     {
         public GifImageView myGIFImage;
+        public ImageView myImageClose;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -34,13 +35,21 @@ namespace ProjectPart.dialogFragments
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
             View view = inflater.Inflate(Resource.Layout.login_successful, container, false);
             myGIFImage = view.FindViewById<GifImageView>(Resource.Id.gifImageView);
+            myImageClose = view.FindViewById<ImageView>(Resource.Id.closeImageView);
             Stream input = Resources.OpenRawResource(Resource.Drawable.successfully);
             byte[] bytes = ConvertByteArray(input);
             myGIFImage.SetBytes(bytes);
-            myGIFImage.StartAnimation();          
+            myGIFImage.StartAnimation();
+            myImageClose.Click += MyImageClose_Click;
             return view;
-      
+           
         }
+
+        private void MyImageClose_Click(object sender, EventArgs e)
+        {
+           this.Dismiss();
+        }
+
         private byte[] ConvertByteArray(Stream input)
         {
             byte[] buffer = new byte[16 * 1024];

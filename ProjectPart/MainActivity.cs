@@ -87,7 +87,7 @@ namespace ProjectPart
         {
             loginSuccessful loginFrag = new loginSuccessful();
             var frag = SupportFragmentManager.BeginTransaction();
-            loginFrag.Cancelable = true;
+            loginFrag.Cancelable = false;
             loginFrag.Show(frag, "loginFrag");
 
             /* myGIFImage= FindViewById<GifImageView>(Resource.Id.myGIFImage);
