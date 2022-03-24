@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="action_settings">Settings</string>
+
+
+	<string name="forgotPass">Forgot Password</string>
+	<string name="forgotText">Enter your email and we"'"ll send you a link to</string>
+	<string name="forgotText2">reset your password.</string>
+	<string name="enterEmail">Enter Your Email</string>
+	<string name="Buttonsubmit">Submit</string>
+	<string name="didnotreceived">Didn"'"t received a link"?"</string>
+	<string name="resend">Resend</string>
+</resources>

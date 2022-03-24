@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Sign_out" data-name="Sign out" transform="translate(0 -0.082)">
+    <circle id="Ellipse_61" data-name="Ellipse 61" cx="20" cy="20" r="20" transform="translate(0 0.082)" fill="rgba(18,113,255,0.1)"/>
+    <g id="carbon_logout" transform="translate(11 10.418)">
+      <path id="Path_48" data-name="Path 48" d="M4.5,22.5h9A1.5,1.5,0,0,0,15,21V18.75H13.5V21h-9V3h9V5.25H15V3a1.5,1.5,0,0,0-1.5-1.5h-9A1.5,1.5,0,0,0,3,3V21a1.5,1.5,0,0,0,1.5,1.5Z" transform="translate(-3 -1.5)" fill="#1271ff"/>
+      <path id="Path_49" data-name="Path 49" d="M15.439,15.439l2.689-2.689H7.5v-1.5H18.129L15.439,8.561,16.5,7.5,21,12l-4.5,4.5Z" transform="translate(-3 -1.5)" fill="#1271ff"/>
+    </g>
+  </g>
+</svg>
