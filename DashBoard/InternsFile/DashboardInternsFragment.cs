@@ -32,6 +32,10 @@ namespace DashBoard
         private HolidayList _holidaylist;
         private Context context;
 
+        public DashboardInternsFragment()
+        {
+        }
+
         public DashboardInternsFragment(Context context)
         {
             this.context= context;
@@ -63,9 +67,9 @@ namespace DashBoard
         {
 
             _leaveStatus = new List<PieEntry>();
-            _leaveStatus.Add(new PieEntry(100));
-            _leaveStatus.Add(new PieEntry(100));
-            _leaveStatus.Add(new PieEntry(100));
+            _leaveStatus.Add(new PieEntry(8));
+            _leaveStatus.Add(new PieEntry(1));
+            _leaveStatus.Add(new PieEntry(5));
 
 
           
@@ -88,10 +92,10 @@ namespace DashBoard
             _pieChartLeaveStatus.Data = _pieDataLaveStatus;
 
 
-           
 
+            
             _pieChartLeaveStatus.SetDrawCenterText(true);
-            _pieChartLeaveStatus.CenterText = "20";
+            _pieChartLeaveStatus.CenterText = "14";
             _pieChartLeaveStatus.Invalidate();
             _pieChartLeaveStatus.Description.Enabled = false;
             _pieChartLeaveStatus.Animate();

@@ -34,12 +34,16 @@ namespace DashBoard
         private List<PieEntry> _leaveListStatusMentors;
         private List<int> _pieChartColors;
 
-
+        public DashboardMentorsFragment()
+        {
+        }
 
         public DashboardMentorsFragment(Context context)
         {
             this.context = context;
         }
+
+      
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -79,9 +83,9 @@ namespace DashBoard
         private void GetPieData()
         {
             _leaveListStatusMentors = new List<PieEntry>();
-            _leaveListStatusMentors.Add(new PieEntry(100));
-            _leaveListStatusMentors.Add(new PieEntry(50));
-            _leaveListStatusMentors.Add(new PieEntry(80));
+            _leaveListStatusMentors.Add(new PieEntry(10));
+            _leaveListStatusMentors.Add(new PieEntry(5));
+            _leaveListStatusMentors.Add(new PieEntry(8));
 
             _pieDataSetLeaveStatusMentors = new PieDataSet(_leaveListStatusMentors, "Leave Status");
             _pieChartColors = new List<int>();
@@ -94,6 +98,7 @@ namespace DashBoard
 
             _pieDataLeaveStatusMentors = new PieData(_pieDataSetLeaveStatusMentors);
 
+            
             _pieChartLeaveStatusMentors.Data = _pieDataLeaveStatusMentors;
             _pieChartLeaveStatusMentors.Invalidate();
             _pieChartLeaveStatusMentors.Description.Enabled = false;

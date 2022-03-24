@@ -5,18 +5,21 @@ using Android.Views;
 using AndroidX.AppCompat.App;
 using Google.Android.Material.BottomNavigation;
 using Google.Android.Material.FloatingActionButton;
+using System;
 using static Google.Android.Material.BottomNavigation.BottomNavigationView;
 using Fragment = AndroidX.Fragment.App.Fragment;
+using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace DashBoard
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme",MainLauncher = true)]
     public class DashboardInterns : AppCompatActivity, IOnNavigationItemSelectedListener
     {
         private BottomNavigationView _bottomNavigationViewInterns;
         private DashboardInternsFragment _dasboardInternsFragment;
         private StatusInternFragment _statusInternFragment;
         private ProfileInternFragment _profileInternFragment;
+        private Toolbar _toolbar;
         private FloatingActionButton _buttonApplyLeave;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,16 +28,35 @@ namespace DashBoard
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.dashboardInternsLayout);
 
-            
+            UIReferences();
+            UIClickEvents();
+            ObjectCreations();
+           
+             SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoard, _dasboardInternsFragment).Commit();
+            _toolbar.Title = Resources.GetString(Resource.String.dashboard);
+        }
+
+        private void UIReferences()
+        {
             _bottomNavigationViewInterns = FindViewById<BottomNavigationView>(Resource.Id.bottonNavigationViewInterns);
             _buttonApplyLeave = FindViewById<FloatingActionButton>(Resource.Id.floatingActionButtonApplyLeave);
-
+            _toolbar = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbar);
+        }
+        
+        private void UIClickEvents()
+        {
             _bottomNavigationViewInterns.SetOnNavigationItemSelectedListener(this);
+        }
+
+        private void ObjectCreations()
+        {
             _dasboardInternsFragment = new DashboardInternsFragment(this);
             _statusInternFragment = new StatusInternFragment();
             _profileInternFragment = new ProfileInternFragment();
-            SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoard, _dasboardInternsFragment).Commit();
         }
+
+
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -49,16 +71,19 @@ namespace DashBoard
             {
                 case Resource.Id.dashboard:
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoard, _dasboardInternsFragment).Commit();
+                    _toolbar.Title = Resources.GetString(Resource.String.dashboard);
                     _buttonApplyLeave.Visibility = ViewStates.Visible;
                     break;
 
                 case Resource.Id.status:
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoard, _statusInternFragment).Commit();
+                    _toolbar.Title = Resources.GetString(Resource.String.status);
                     _buttonApplyLeave.Visibility = ViewStates.Gone;
                     break;
 
                 case Resource.Id.profile:
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoard, _profileInternFragment).Commit();
+                    _toolbar.Title = Resources.GetString(Resource.String.profile);
                     _buttonApplyLeave.Visibility = ViewStates.Gone;
                     break;
 

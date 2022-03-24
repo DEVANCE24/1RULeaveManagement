@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using static Google.Android.Material.BottomNavigation.BottomNavigationView;
+using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace DashBoard
 { 
@@ -22,6 +23,7 @@ namespace DashBoard
         private DashboardMentorsFragment _dashboardMentorsFragment;
         private RequestsMentorsFragment _requestsMentorsFragment;
         private ProfileMentorsFragment _profileMentorsFragment;
+        private Toolbar _toolbarMentors;
      
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,17 +31,36 @@ namespace DashBoard
 
             
             SetContentView(Resource.Layout.dashboardMentorsLayout);
-            _bottomNavigationViewMentors = FindViewById<BottomNavigationView>(Resource.Id.bottonNavigationViewMentors);
-            _bottomNavigationViewMentors.SetOnNavigationItemSelectedListener(this);
-            
-            _dashboardMentorsFragment = new DashboardMentorsFragment(this);
-            _requestsMentorsFragment = new RequestsMentorsFragment();
-            _profileMentorsFragment = new ProfileMentorsFragment();
 
+            UIReferences();
+            UIClickEvents();
+            ObjectCreation();
+            
             SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoardMentors, _dashboardMentorsFragment).Commit();
+            _toolbarMentors.Title = Resources.GetString(Resource.String.dashboard);
 
 
         }
+
+        private void UIReferences()
+        {
+            _bottomNavigationViewMentors = FindViewById<BottomNavigationView>(Resource.Id.bottonNavigationViewMentors);
+            _toolbarMentors = FindViewById<AndroidX.AppCompat.Widget.Toolbar>(Resource.Id.toolbarMentors);
+        }
+
+        
+        private void UIClickEvents()
+        {
+            _bottomNavigationViewMentors.SetOnNavigationItemSelectedListener(this);
+        }
+
+        private void ObjectCreation()
+        {
+            _dashboardMentorsFragment = new DashboardMentorsFragment(this);
+            _requestsMentorsFragment = new RequestsMentorsFragment();
+            _profileMentorsFragment = new ProfileMentorsFragment();
+        }
+
 
         public bool OnNavigationItemSelected(IMenuItem item)
         {
@@ -48,14 +69,17 @@ namespace DashBoard
 
                 case Resource.Id.dashboardmentors:
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoardMentors, _dashboardMentorsFragment).Commit();
+                    _toolbarMentors.Title = Resources.GetString(Resource.String.dashboard);
                     break;
 
                 case Resource.Id.requestsmentors:
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoardMentors, _requestsMentorsFragment).Commit();
+                    _toolbarMentors.Title = Resources.GetString(Resource.String.request);
                     break;
 
                 case Resource.Id.profilementors:
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoardMentors, _profileMentorsFragment).Commit();
+                    _toolbarMentors.Title = Resources.GetString(Resource.String.profile);
                     break;
 
             }

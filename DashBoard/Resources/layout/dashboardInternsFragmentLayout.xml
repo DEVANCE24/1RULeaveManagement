@@ -12,17 +12,7 @@
         android:padding="24dp"
         android:background="@color/bacgroundWhite">
 
-        <TextView
-            android:layout_width="148dp"
-            android:id="@+id/textViewdashboardInterns"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/cardViewLeaveRequest"
-            android:layout_marginTop="20dp"
-            android:layout_height="34dp"
-            android:text="@string/dashboard"
-            android:textSize="28sp"
-            android:textColor="@color/blue"
-            android:textStyle="bold"/>
+        
 
      
 
@@ -31,10 +21,8 @@
             android:layout_width="170dp"
             android:layout_height="130dp"
             app:cardCornerRadius="10dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/textViewdashboardInterns"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/cardViewWfhRequest"
-            app:layout_constraintBottom_toTopOf="@id/cardViewLeaveStatus"
             app:layout_constraintStart_toStartOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -59,7 +47,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:textColor="@color/lightBlue"
-                android:text="@string/minValueText00"
+                android:text="20"
                 app:layout_constraintTop_toTopOf="@+id/progressBarLeaveRequest"
                 app:layout_constraintBottom_toBottomOf="@+id/imageViewLeaveRequest"
                 app:layout_constraintStart_toStartOf="@+id/progressBarLeaveRequest"
@@ -72,7 +60,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 style="?android:attr/progressBarStyleHorizontal"
-                android:progress="0"
+                android:progress="20"
                 android:max="100"
                 android:progressDrawable="@drawable/progressbarblue"
                 app:layout_constraintTop_toTopOf="@+id/imageViewLeaveRequest"
@@ -103,12 +91,10 @@
             android:layout_width="170dp"
             android:layout_height="130dp"
             app:cardCornerRadius="10dp"
-            android:layout_marginTop="40dp"
             android:layout_marginLeft="12dp"
-            app:layout_constraintTop_toTopOf="@+id/textViewdashboardInterns"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardViewLeaveRequest"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/cardViewLeaveStatus">
+            app:layout_constraintEnd_toEndOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -132,7 +118,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:textColor="@color/lightRed"
-                android:text="@string/minValueText00"
+                android:text="10"
                 app:layout_constraintTop_toTopOf="@+id/progressBarWfhRequest"
                 app:layout_constraintBottom_toBottomOf="@+id/imageViewWfhRequest"
                 app:layout_constraintStart_toStartOf="@+id/progressBarWfhRequest"
@@ -143,8 +129,8 @@
                 android:id="@+id/progressBarWfhRequest"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:progress="0"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="10"
                 android:max="100"
                 android:progressDrawable="@drawable/progressbarred"
                 app:layout_constraintTop_toTopOf="@+id/imageViewWfhRequest"
@@ -173,7 +159,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewLeaveStatus"
             android:layout_width="364dp"
-            android:layout_height="200dp"
+            android:layout_height="215dp"
             app:cardCornerRadius="20dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -208,8 +194,7 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginBottom="20dp"
                 app:layout_constraintTop_toBottomOf="@+id/textViewLeaveStatus"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"/>
 
            
 
@@ -228,7 +213,7 @@
                     android:id="@+id/textViewTotalPendingRequest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/minValueText00"
+                    android:text="01"
                     android:textColor="@color/yellow"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -268,7 +253,7 @@
                     android:id="@+id/textViewTotalRejectRequest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/minValueText00"
+                    android:text="05"
                     android:textColor="@color/lightRed"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -307,7 +292,7 @@
                     android:id="@+id/textViewTotalAcceptedRequest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/minValueText00"
+                    android:text="08"
                     android:textColor="@color/green"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -335,7 +320,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewListOfHolidays"
             android:layout_width="364dp"
-            android:layout_height="220dp"
+            android:layout_height="290dp"
             app:cardCornerRadius="20dp"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@id/cardViewLeaveStatus"
@@ -364,12 +349,11 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewHolidayList"
                 android:layout_width="match_parent"
-                android:layout_height="190dp"
-                android:padding="24dp"
+                android:layout_height="230dp"
+                android:padding="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewListOfHolidays"
-                app:layout_constraintBottom_toBottomOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@+id/textViewListOfHolidays"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>

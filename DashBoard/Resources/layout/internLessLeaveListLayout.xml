@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:padding="5dp">
 
     <TextView
         
@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textStyle="bold"
-        android:text="hi"
         android:textColor="@color/sonicSilver"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +24,6 @@
         android:layout_height="wrap_content"
         android:textSize="10sp"
         android:textStyle="bold"
-        android:text="hi"
         android:gravity="center"
         android:textColor="@color/blue"
         android:background="@drawable/ic_bluecircle_mentors"
