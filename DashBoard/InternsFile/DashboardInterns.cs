@@ -1,8 +1,10 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using AndroidX.AppCompat.App;
+using DashBoard.InternsFile;
 using Google.Android.Material.BottomNavigation;
 using Google.Android.Material.FloatingActionButton;
 using System;
@@ -12,7 +14,7 @@ using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace DashBoard
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme",MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme",MainLauncher = true, ConfigurationChanges = Android.Content.PM.ConfigChanges.Orientation | Android.Content.PM.ConfigChanges.ScreenSize)]
     public class DashboardInterns : AppCompatActivity, IOnNavigationItemSelectedListener
     {
         private BottomNavigationView _bottomNavigationViewInterns;
@@ -29,10 +31,12 @@ namespace DashBoard
             SetContentView(Resource.Layout.dashboardInternsLayout);
 
             UIReferences();
+
             UIClickEvents();
             ObjectCreations();
-           
-             SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoard, _dasboardInternsFragment).Commit();
+
+            SetSupportActionBar(_toolbar);
+            SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoard, _dasboardInternsFragment).Commit();
             _toolbar.Title = Resources.GetString(Resource.String.dashboard);
         }
 
@@ -46,11 +50,18 @@ namespace DashBoard
         private void UIClickEvents()
         {
             _bottomNavigationViewInterns.SetOnNavigationItemSelectedListener(this);
+            _buttonApplyLeave.Click += _buttonApplyLeave_Click;
+        }
+
+        private void _buttonApplyLeave_Click(object sender, EventArgs e)
+        {
+            Intent applyLeaveIntent = new Intent(this, typeof(ApplyLeaveInternActivity));
+            StartActivity(applyLeaveIntent);
         }
 
         private void ObjectCreations()
         {
-            _dasboardInternsFragment = new DashboardInternsFragment(this);
+            _dasboardInternsFragment = new DashboardInternsFragment();
             _statusInternFragment = new StatusInternFragment();
             _profileInternFragment = new ProfileInternFragment();
         }
@@ -77,7 +88,7 @@ namespace DashBoard
 
                 case Resource.Id.status:
                     SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayoutDashBoard, _statusInternFragment).Commit();
-                    _toolbar.Title = Resources.GetString(Resource.String.status);
+                    _toolbar.Title = Resources.GetString(Resource.String.leaveStatus);
                     _buttonApplyLeave.Visibility = ViewStates.Gone;
                     break;
 

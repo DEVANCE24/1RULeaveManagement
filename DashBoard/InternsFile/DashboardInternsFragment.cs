@@ -30,16 +30,9 @@ namespace DashBoard
         private RecyclerView.LayoutManager _layoutmanager;
         private HolidayListAdapter _holidayListAdapter;
         private HolidayList _holidaylist;
-        private Context context;
+       
 
-        public DashboardInternsFragment()
-        {
-        }
-
-        public DashboardInternsFragment(Context context)
-        {
-            this.context= context;
-        }
+       
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
@@ -49,11 +42,11 @@ namespace DashBoard
             
             _recyclerViewHolidayList.AddItemDecoration(new DividerItemDecoration(Activity.ApplicationContext, DividerItemDecoration.Vertical));
             
-            _layoutmanager = new LinearLayoutManager(context);
+            _layoutmanager = new LinearLayoutManager(Activity);
             _recyclerViewHolidayList.SetLayoutManager(_layoutmanager);
             _holidaylist = new HolidayList();
 
-            _holidayListAdapter = new HolidayListAdapter(_holidaylist, context);
+            _holidayListAdapter = new HolidayListAdapter(_holidaylist, Activity);
             _recyclerViewHolidayList.SetAdapter(_holidayListAdapter);
 
             GetPieEntry();
@@ -93,7 +86,6 @@ namespace DashBoard
 
 
 
-            
             _pieChartLeaveStatus.SetDrawCenterText(true);
             _pieChartLeaveStatus.CenterText = "14";
             _pieChartLeaveStatus.Invalidate();

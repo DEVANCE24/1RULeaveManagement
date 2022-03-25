@@ -19,4 +19,22 @@
 	<string name="moreLeaves">Intern who has asked more leaves</string>
 	<string name="lessLeaves">Intern who has asked less leaves</string>
 	<string name="request">Requests</string>
+	<string name="revokeRequest">Revoke Request</string>
+	<string name="revokeQuestion">Are you sure you want to revoke the request"?"</string>
+	<string name="yes">YES</string>
+	<string name="no">NO</string>
+
+	<string name="loginString">Login</string>
+	<string name="typeReason">Type Your Reason For Leave</string>
+	<string name="applyLeave">Apply Leave</string>
+	<string name="fullDay">Full Day</string>
+	<string name="firstHalf">1st Half Day</string>
+	<string name="secondHalf">2nd Half Day</string>
+	<string name="fromDate">From</string>
+	<string name="toDate">To</string>
+	<string name="leave">Leave</string>
+	<string name="workFromHome">WFH</string>
+	<string name="leaveSubmitStatus">Your leave request has been submitted successfully</string>
+	
+	
 </resources>
