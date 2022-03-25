@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        
+        android:id="@+id/revoketextview"
+        android:textColor="#000000"
+        android:text="Revoke Request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@+id/revoketextview"
+      android:layout_marginTop="10dp"
+     
+        android:id="@+id/areyousure"
+        android:textColor="#000000"
+        android:text="Are you sure you want to revoke the request?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     <TextView
+        android:layout_below="@+id/areyousure"
+      android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/yestext"
+        android:textColor="@android:color/holo_blue_dark"
+          android:layout_alignParentRight="true"
+        android:text="Yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+     <TextView
+         android:layout_below="@+id/areyousure"
+      
+      android:layout_marginTop="10dp"
+  android:layout_toLeftOf="@+id/yestext"
+        android:layout_marginRight="20dp"
+        android:id="@+id/notext"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="No"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,29 +1,31 @@
 ﻿using Android.Content;
 using Android.Views;
 using Android.Widget;
+using AndroidX.Fragment.App;
 using AndroidX.RecyclerView.Widget;
 using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
 
 namespace leavestatusmodule
 {
     class recyclerviewadapter : RecyclerView.Adapter
     {
+        revokefragment revokefrag;
         RecyclerView.ViewHolder viewHolder;
         public const  int USER = 0, IMAGE = 1;
         List<internsonleave> leavelist;
         MyViewHolder viewholder1;
         MyViewHolder2 viewHolder2;
-        Context con;
+        MainActivity con;
 
         //public event EventHandler<int> itemClick;
 
 
-        public recyclerviewadapter(List<internsonleave> leavelist, Context context)
+        public recyclerviewadapter(List<internsonleave> leavelist, MainActivity context)
         {
             this.leavelist = leavelist;
-            con = context;
+            this.con = context;
         }
 
         //public override int ItemCount => throw new NotImplementedException();
@@ -40,17 +42,33 @@ namespace leavestatusmodule
             case USER:
                     MyViewHolder viewHolder1 = holder as MyViewHolder;
                     configureViewHolder1(viewHolder1, position);
+                    viewHolder1.revokebutton.Click += Revokebutton_Click1;
                     break;
                 case IMAGE:
                     MyViewHolder2 viewholder2 = holder as MyViewHolder2;
                     configureViewHolder2(viewholder2, position);
+                    viewholder2.revokebutton2.Click += Revokebutton2_Click;
                     break;
             }
             
         }
 
+        private void Revokebutton2_Click(object sender, EventArgs e)
+        {
+          revokefrag = new revokefragment();    
+            var trans = con.SupportFragmentManager.BeginTransaction();
+            revokefrag.Cancelable = false;
+            revokefrag.Show(trans,"lable");
+        }
 
-
+        private  void  Revokebutton_Click1(object sender, EventArgs e)
+        {
+            revokefrag = new revokefragment();
+            var trans = con.SupportFragmentManager.BeginTransaction();
+            revokefrag.Cancelable = false;
+            revokefrag.Show(trans,"lable");
+        }
+       
         private void configureViewHolder2(MyViewHolder2 vh2, int position)
         {
               if (leavelist[position].statusofleave.Trim() == "pending")
@@ -71,10 +89,12 @@ namespace leavestatusmodule
             vh2.typeofleaveTextview2.Text = leavelist[position].typeofleave;
             vh2.leavestatusbutton2.Text = leavelist[position].statusofleave;
             vh2.revokebutton2.Text = leavelist[position].buttontext;
+
         }
 
         private void configureViewHolder1(MyViewHolder vh1, int position)
         {
+      
              if (leavelist[position].statusofleave.Trim() == "pending")
             {
 
@@ -93,6 +113,8 @@ namespace leavestatusmodule
             vh1.revokebutton.Text = leavelist[position].buttontext;
             
         }
+
+       
 
         public override int GetItemViewType(int position)
         {

@@ -26,7 +26,7 @@ namespace leavestatusmodule
             datainput();
             mLayoutManager = new LinearLayoutManager(this);
             recycler.SetLayoutManager(mLayoutManager);
-            mAdapter = new recyclerviewadapter(leavelist, ApplicationContext);
+            mAdapter = new recyclerviewadapter(leavelist, this);
             recycler.SetAdapter(mAdapter);
 
         }
@@ -34,7 +34,13 @@ namespace leavestatusmodule
         {
             leavelist = new List<internsonleave>
             { 
-               new internsonleave{ reason ="i have to visit a family function",day="Wed",date="16 feb",typeofleave="half day",seperatordate =" Jan 2022",statusofleave="accepted",buttontext="Revoke"},
+               new internsonleave{
+                   reason ="i have to visit a family function",day="Wed",
+                   date="16 feb",typeofleave="half day",
+                   seperatordate =" Jan 2022",
+                   statusofleave="accepted",
+                   buttontext="Revoke"
+                                 },
                new internsonleave{ reason ="i have to visit a dentist ",day="Wed",date="14 feb",typeofleave="full day",statusofleave="pending",buttontext="Req to revoke"},
                new internsonleave{ reason ="i missed the bus",day="thu",date="17 feb",typeofleave="half day",seperatordate ="",statusofleave="accepted",buttontext="Revoke"},
                new internsonleave{ reason ="i missed the train",day="Friday",date="18 feb",typeofleave="full day",seperatordate =" Feb 2022",statusofleave="pending",buttontext="Revoke"},
