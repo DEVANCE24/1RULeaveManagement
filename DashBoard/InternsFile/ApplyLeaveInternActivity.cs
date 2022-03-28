@@ -20,7 +20,7 @@ namespace DashBoard.InternsFile
         public TabLayout _mytabLayout;
         public TextView _mytextView;
         public FrameLayout frameLayout;
-        public ImageView _myImage;
+        public ImageView _myImageViewApplyLeave;
         public Button _myApplyButton;
         private LoginSuccessfullFragment _loginSuccessfullFragment;
         private ApplyLeaveFragment _fragmentApplyLeave;
@@ -46,15 +46,20 @@ namespace DashBoard.InternsFile
         {
             _mytabLayout = FindViewById<TabLayout>(Resource.Id.tabLayout);
             _myApplyButton = FindViewById<Button>(Resource.Id.applyButton);
-            _myImage = FindViewById<ImageView>(Resource.Id.imageViewBack);
+            _myImageViewApplyLeave = FindViewById<ImageView>(Resource.Id.imageViewBackApplyLeave);
         }
         private void UIEventClick()
         {
             _mytabLayout.TabSelected += _mytabLayout_TabSelected;
             _myApplyButton.Click += _myApplyButton_Click;
+            _myImageViewApplyLeave.Click += _myImageViewApplyLeave_Click;
         }
 
-        
+        private void _myImageViewApplyLeave_Click(object sender, EventArgs e)
+        {
+            Finish();
+        }
+
         private void _mytabLayout_TabSelected(object sender, TabLayout.TabSelectedEventArgs e)
         {
             Fragment _selected = null;
