@@ -84,7 +84,6 @@ namespace ClgProject.InternsFile
             var frag = SupportFragmentManager.BeginTransaction();
             _loginSuccessfullFragment.Cancelable = false;
             _loginSuccessfullFragment.Show(frag, "loginFrag");
-
         }
 
 

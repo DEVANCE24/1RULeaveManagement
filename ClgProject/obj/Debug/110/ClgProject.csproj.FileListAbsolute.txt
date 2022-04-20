@@ -1,4 +1,10 @@
-C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\backgroundimage.png
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\ClgProject.dll
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\ClgProject.pdb
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject.apk
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject.aab
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject-Signed.aab
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject-Signed.apk
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject-Signed.apk.idsig
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\build.props
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\adb.props
@@ -24,13 +30,6 @@ C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\lp\82\jl
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\R.txt
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\R.cs.flag
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\ClgProject.csproj.CoreCompileInputs.cache
-C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\ClgProject.dll
-C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\ClgProject.pdb
-C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject.apk
-C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject.aab
-C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject-Signed.aab
-C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject-Signed.apk
-C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\bin\Debug\com.companyname.clgproject-Signed.apk.idsig
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\ClgProject.dll
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\ClgProject.pdb
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\android\bin\com.companyname.clgproject.apk
@@ -60,6 +59,7 @@ C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\mipm
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\mipmap-xxxhdpi\ic_launcher_foreground.png
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\mipmap-xxxhdpi\ic_launcher_round.png
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\values\dimen.xml
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\backgroundimage.png
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\gradient.xml
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\loginshape.xml
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\ruw.png
@@ -133,6 +133,7 @@ C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\draw
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\shape_rect_yellow.xml
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\successfully.gif
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\layout\mentordetaillistlayout.xml
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\res\drawable\rub.png
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\uploadflags.txt
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\resolvedassemblies.hash
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\android\assets\ClgProject.dll
@@ -419,3 +420,4 @@ C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\stamp\_C
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Debug\110\ClgProject.csproj.AssemblyReference.cache

@@ -13,6 +13,8 @@ namespace ClgProject.InternsFile
         private DateFromPickerDialogFragment _dateFromPickerDialoguefragment;
         private DateToPickerDialogFragment _dateToPickerDialoguefragment;
         private readonly string _tag = "Main Activity";
+        public EditText editTextleaveApplication;
+        public RadioGroup radioGroup;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -31,6 +33,9 @@ namespace ClgProject.InternsFile
 
             _imageViewTo = viewApplyLeave.FindViewById<ImageView>(Resource.Id.imageViewToCalender);
             _textViewToDate = viewApplyLeave.FindViewById<TextView>(Resource.Id.textViewToDate);
+            editTextleaveApplication = viewApplyLeave.FindViewById<EditText>(Resource.Id.editTextLeaveApplication);
+
+            radioGroup = viewApplyLeave.FindViewById<RadioGroup>(Resource.Id.radioGroup);
 
             ObjectCreation();
             BindEventofDateChange();

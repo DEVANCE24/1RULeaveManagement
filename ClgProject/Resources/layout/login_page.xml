@@ -13,7 +13,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/size300"
-            android:background="@drawable/backgroundimage"      
+            android:background="@drawable/backgroundimage"     
             >
        
             <View

@@ -5,11 +5,7 @@
 	<string name="username">Username</string>
 	<string name="password">Password</string>
 	<string name="leavemanagement">Leave Management</string>
-	<string name="forgotpassword">Forgot" "Password"?"</string>
-	
-	
-	
-	
+	<string name="forgotpassword">Forgot" "Password"?"</string>	
 	<string name="forgotPass">Forgot Password</string>
 	<string name="forgotText">Enter your email and we"'"ll send you a link to</string>
 	<string name="forgotText2">reset your password.</string>
@@ -18,39 +14,15 @@
 	<string name="didnotreceived">Didn"'"t received a link"?"</string>
 	<string name="resend">Resend</string>
 	<string name="dashboard">Dashboard</string>
-
-	<string name="status">Status</string>
-
-	<string name="profile">My Profile</string>
-
 	<string name="leaveRequests">Leave Requests</string>
-
-	<string name="wfhRequests">WFH Requests</string>
-
 	<string name="leaveStatus">Leave Status</string>
-
-	<string name="pendingRequest">Pending Requests</string>
-
 	<string name="rejectRequest">Reject Requests</string>
-
 	<string name="acceptedRequest">Accepted Requests</string>
-
-	<string name="minValueText00">00</string>
-
 	<string name="listOfHolidays">List of Holidays</string>
-
-	<string name="totalLeaves">Total Leaves</string>
-
-	<string name="totalCountLeaves">20</string>
-
 	<string name="interns">Interns</string>
-
 	<string name="leaveRequest">Leave Request</string>
-
 	<string name="moreLeaves">Intern who has asked more leaves</string>
-
 	<string name="lessLeaves">Intern who has asked less leaves</string>
-
 	<string name="request">Requests</string>
 
 	<string name="revokeRequest">Revoke Request</string>
@@ -118,12 +90,23 @@
 	<string name="mentor">Mentors</string>
 
 	<string name="Change_Password">Change Password</string>
-
 	<string name="Enter_Your_Password">Enter Your Password</string>
-
 	<string name="Enter_New_Password">Enter New Password</string>
-
 	<string name="Confrirm_Your_Password">Confirm New Password</string>
-
 	<string name="Forget_Password">Forgot Password?</string>
+	<string name="status">Status</string>
+	<string name="profile">My Profile</string>
+	<string name="wfhRequests">WFH Requests</string>
+	<string name="pendingRequest">Pending Requests</string>
+	<string name="minValueText00">00</string>
+	<string name="totalLeaves">Total Leaves</string>
+	<string name="totalCountLeaves">20</string>
+
+
+
+
+
+
+
+
 </resources>

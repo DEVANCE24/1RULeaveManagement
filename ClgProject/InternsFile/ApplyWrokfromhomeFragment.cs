@@ -20,6 +20,7 @@ namespace ClgProject.InternsFile
         private DateFromPickerDialogFragment _dateFromPickerDialoguefragment;
         private DateToPickerDialogFragment _dateToPickerDialoguefragment;
         private readonly string _tag = "Main Activity";
+        public EditText applyleaveapplication;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -35,6 +36,8 @@ namespace ClgProject.InternsFile
 
             _imageViewToWfh = viewApplyWfh.FindViewById<ImageView>(Resource.Id.imageViewToCalender);
             _textViewToWfh = viewApplyWfh.FindViewById<TextView>(Resource.Id.textViewShowDateTo);
+
+            applyleaveapplication = viewApplyWfh.FindViewById<EditText>(Resource.Id.editTextwfh);
 
             ObjectCreation();
             BindEventofDateChange();

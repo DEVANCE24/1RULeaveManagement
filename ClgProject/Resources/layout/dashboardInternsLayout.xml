@@ -9,7 +9,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/size20"
         android:layout_height="?android:attr/actionBarSize"
         android:theme="@style/Theme.AppCompat.Light"
         app:titleTextColor="@color/blue"
@@ -49,8 +49,8 @@
         android:src="@drawable/ic_applyleave"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/bottonNavigationViewInterns"
-        android:layout_marginBottom="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginBottom="@dimen/size25"
+        android:layout_marginRight="@dimen/size25"
         android:visibility="visible"/>
 
 

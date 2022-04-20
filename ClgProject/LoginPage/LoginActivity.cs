@@ -5,9 +5,11 @@ using Android.Runtime;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using ClgProject.Forget_Password;
+using ClgProject.Models;
 using Google.Android.Material.TextField;
 using System;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace ClgProject
 {
@@ -19,6 +21,8 @@ namespace ClgProject
         private TextView forget;
         private Button LoginButton;
         private Regex validUsername = new Regex("^[A-Z]+[a-zA-Z]+(@)+[0-9]*$");
+        private string endurl = "api/Login/AuthenticateUser";
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -32,10 +36,10 @@ namespace ClgProject
         private void UIClickEvent()
         {
             forget.Click += Forget_Click;
-            LoginButton.Click += LoginButton_Click;
+            LoginButton.Click += LoginButton_ClickAsync;
         }
 
-        private void LoginButton_Click(object sender, EventArgs e)
+        private async void LoginButton_ClickAsync(object sender, EventArgs e)
         {
             if (!checkusername() && !checkpassword())
             {
@@ -52,8 +56,17 @@ namespace ClgProject
                 Toast.MakeText(this, "LoggedIn Successfully", ToastLength.Short).Show();
                 passwordlyt.Error = null;
                 usernamelyt.Error = null;
+                usernametxt.Text = null;
+                passwordtxt.Text = null;
+
+                UserLoginModel userLogin = new UserLoginModel();
+                userLogin.UserName = usernametxt.Text;
+                userLogin.Password = passwordtxt.Text;
+                var result = await ApiClass.Post<UserLoginModel>(endurl, userLogin);
                 Intent Dashboard = new Intent(this, typeof(DashboardInterns));
                 StartActivity(Dashboard);
+                usernametxt.Text = null;
+                passwordtxt.Text = null;
 
             }
 

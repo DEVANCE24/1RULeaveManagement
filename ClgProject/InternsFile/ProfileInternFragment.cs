@@ -29,6 +29,7 @@ namespace ClgProject
         public CardView _cardViewProfileImage;
         private AlertDialog.Builder _alertbuilderPhotoPick;
         public int getImage;
+        public TextView _internLogoutTextView;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -47,14 +48,22 @@ namespace ClgProject
             _imageViewChangePassword = profileInterns.FindViewById<ImageView>(Resource.Id.internChangePassNextImageView);
             _cardViewProfileImage = profileInterns.FindViewById<CardView>(Resource.Id.internCardView);
             _imageViewProfile = profileInterns.FindViewById<CircleImageView>(Resource.Id.profileImageImageView);
+            _internLogoutTextView = profileInterns.FindViewById<TextView>(Resource.Id.internLogoutTextView);
 
             _imageViewInternshipDetails.Click += _imageViewInternshipDetails_Click;
             _imageViewChangePassword.Click += _imageViewChangePassword_Click;
             _imageViewProfile.Click += _imageViewProfile_Click;
 
+            _internLogoutTextView.Click += _internLogoutTextView_Click;
+
             ImageSetter(getImage);
 
             return profileInterns;
+        }
+
+        private void _internLogoutTextView_Click(object sender, EventArgs e)
+        {
+            Activity.Finish();
         }
 
         private void ImageSetter(int getImage)
