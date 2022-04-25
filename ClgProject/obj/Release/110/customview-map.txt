@@ -43,6 +43,7 @@ androidx.recyclerview.widget.RecyclerView;obj\Release\110\res\layout\statusinter
 attr;C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Release\110\lp\0\jl\res\values\values.xml
 background;obj\Release\110\res\mipmap-anydpi-v26\ic_launcher.xml
 background;obj\Release\110\res\mipmap-anydpi-v26\ic_launcher_round.xml
+Button;obj\Release\110\res\layout\changepasswordlayout.xml
 Button;obj\Release\110\res\layout\forget_password.xml
 cache-path;C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Release\110\lp\44\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 clip-path;obj\Release\110\res\drawable\email_outline.xml
@@ -89,6 +90,7 @@ de.hdodenhof.circleimageview.CircleImageView;obj\Release\110\res\layout\mentorpr
 de.hdodenhof.circleimageview.CircleImageView;obj\Release\110\res\layout\profileinternsfragment.xml
 declare-styleable;C:\Users\devansh.desai\source\repos\ClgProject\ClgProject\obj\Release\110\lp\0\jl\res\values\values.xml
 dimen;obj\Release\110\res\values\dimen.xml
+EditText;obj\Release\110\res\layout\changepasswordlayout.xml
 EditText;obj\Release\110\res\layout\forget_password.xml
 EditText;obj\Release\110\res\layout\leaveinternlayout.xml
 EditText;obj\Release\110\res\layout\login_page.xml

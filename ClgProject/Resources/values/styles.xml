@@ -15,4 +15,11 @@
 		<item name="android:textStyle">bold</item>
 
 	</style>
+	<style name="ToolbarColoredBackArrow" parent="AppTheme">
+		<item name="android:textColorSecondary">#1271ff</item>
+	</style>
+
+
+	
+	
 </resources>

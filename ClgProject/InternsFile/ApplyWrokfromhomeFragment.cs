@@ -15,7 +15,7 @@ namespace ClgProject.InternsFile
     public class ApplyWrokfromhomeFragment : Fragment
     {
 
-        private TextView _textViewFromWfh, _textViewToWfh;
+        public TextView _textViewFromWfh, _textViewToWfh;
         private ImageView _imageViewFromWfh, _imageViewToWfh;
         private DateFromPickerDialogFragment _dateFromPickerDialoguefragment;
         private DateToPickerDialogFragment _dateToPickerDialoguefragment;
@@ -37,7 +37,7 @@ namespace ClgProject.InternsFile
             _imageViewToWfh = viewApplyWfh.FindViewById<ImageView>(Resource.Id.imageViewToCalender);
             _textViewToWfh = viewApplyWfh.FindViewById<TextView>(Resource.Id.textViewShowDateTo);
 
-            applyleaveapplication = viewApplyWfh.FindViewById<EditText>(Resource.Id.editTextwfh);
+            applyleaveapplication = viewApplyWfh.FindViewById<EditText>(Resource.Id.editTextleaveApplication);
 
             ObjectCreation();
             BindEventofDateChange();

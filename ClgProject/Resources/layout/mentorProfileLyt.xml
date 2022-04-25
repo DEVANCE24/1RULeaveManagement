@@ -12,30 +12,18 @@
         android:layout_height="match_parent"
         android:background="#F9FBFF">
 
-        <TextView
-            android:id="@+id/mentorTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:layout_marginLeft="20dp"
-            android:text="My Profile"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textStyle="bold"
-            android:textSize="30sp"
-            android:textColor="#257CFF"
-    />
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="@+id/mentorTextView"
-            app:layout_constraintStart_toStartOf="@+id/mentorTextView"
-            app:layout_constraintTop_toTopOf="@+id/mentorTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/mentorCardView"
             app:cardCornerRadius="60dp"
             app:cardElevation="10dp"
-            android:layout_marginTop="60dp">
-
+            android:layout_marginTop="70dp">
+            
 
            <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -43,8 +31,8 @@
        
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profileImageImageView"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:src="@drawable/mentors"
             />
         </androidx.cardview.widget.CardView>
@@ -57,10 +45,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/mentorCardView"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="50dp"
             android:id="@+id/mentorView"
-            android:minWidth="25px"
-            android:minHeight="25px"
+            
             >
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -73,9 +60,9 @@
                     android:layout_height="wrap_content"
                     android:text="Sam Smith Paul"
                     android:id="@+id/mentorNameTextview"
-                    android:layout_marginTop="70dp"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="20sp"
+                    android:layout_marginTop="65dp"
+                    
+                    android:textSize="22sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:text="Business Analyst"
                     android:layout_marginTop="35dp"
-                    android:textSize="12dp"
+                    android:textSize="13dp"
                     app:layout_constraintEnd_toEndOf="@+id/mentorNameTextview"
                     app:layout_constraintStart_toStartOf="@+id/mentorNameTextview"
                     app:layout_constraintTop_toTopOf="@+id/mentorNameTextview"
@@ -104,7 +91,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/mentorBusinessText"
                     android:layout_marginTop="25dp"
-                    android:layout_marginRight="80dp"
+                    android:layout_marginRight="120dp"
                     android:id="@+id/mentorcallImageView"
     />
 
@@ -113,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+91 1234567890"
-                    android:textSize="12dp"
+                    android:textSize="@dimen/size13"
                     android:layout_marginTop="30dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/mentorcallImageView"
@@ -140,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:text="Internship details"
                     android:textStyle="bold"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/mentorDetailsImageView"
                     app:layout_constraintHorizontal_bias="0.100"
@@ -154,7 +141,7 @@
                     android:background="@drawable/outlinebk"
                     app:layout_constraintTop_toTopOf="@+id/mentorDetailsImageView"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
                     android:id="@+id/mentorNextDetailsImageView"
      />
@@ -190,7 +177,7 @@
                     android:background="@drawable/outlinebk"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/mentorEmailImageView"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="65dp"
                     android:layout_marginLeft="20dp"
                     android:id="@+id/mentorUserImageView"
     />
@@ -214,7 +201,7 @@
                     android:src="@drawable/change_password"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/mentorUserTextView"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="55dp"
                     android:layout_marginLeft="20dp"
                     android:id="@+id/mentorChangePassImageView"
     />
@@ -225,7 +212,7 @@
                     android:layout_height="wrap_content"
                     android:text="Change password"
                     android:textStyle="bold"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/mentorChangePassImageView"
                     app:layout_constraintHorizontal_bias="0.100"
@@ -238,7 +225,7 @@
                     android:src="@drawable/ic_next"
                     app:layout_constraintTop_toTopOf="@+id/mentorChangePassImageView"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
                     android:id="@+id/mentornextChangePassImageView"
     />
@@ -249,7 +236,7 @@
                     android:src="@drawable/log_out"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/mentorChangePassImageView"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="65dp"
                     android:layout_marginLeft="20dp"
                     android:id="@+id/mentorLogoutImageView"
     />

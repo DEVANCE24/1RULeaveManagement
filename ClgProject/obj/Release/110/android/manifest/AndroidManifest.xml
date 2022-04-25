@@ -13,25 +13,20 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@drawable/rub" android:label="@string/app_name" android:roundIcon="@drawable/rub" android:supportsRtl="true" android:theme="@style/AppTheme">
     <activity android:name="crc640edc275a75d24d81.DashboardInterns" android:configChanges="orientation|screenSize" android:label="@string/app_name" android:theme="@style/AppTheme" />
-    <activity android:name="crc640edc275a75d24d81.LoginActivity" android:exported="true" android:label="@string/app_name" android:theme="@style/AppTheme">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
+    <activity android:name="crc640edc275a75d24d81.LoginActivity" android:label="@string/app_name" android:theme="@style/AppTheme" />
     <activity android:name="crc640edc275a75d24d81.ChangePasswordActivity" android:configChanges="orientation|screenSize" android:label="@string/app_name" android:theme="@style/AppTheme" />
-    <activity android:name="crc640edc275a75d24d81.DashboardMentors" android:exported="true" android:label="@string/app_name" android:theme="@style/AppTheme">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
+    <activity android:name="crc640edc275a75d24d81.DashboardMentors" android:label="@string/app_name" android:theme="@style/AppTheme" />
     <activity android:name="crc640edc275a75d24d81.ForgetPassword" android:label="ForgetPassword" />
     <activity android:name="crc640edc275a75d24d81.internshipDetailsAct" android:label="@string/app_name" android:theme="@style/AppTheme" />
     <activity android:name="crc646981593b6fe1153f.leaverequest" android:label="leaverequest" />
     <activity android:name="crc646981593b6fe1153f.MentorViewLeaveReq" android:label="MentorViewLeaveReq" />
     <activity android:name="crc6482bd6b2d40628ba8.ApplyLeaveInternActivity" android:configChanges="orientation|screenSize" android:label="@string/app_name" android:theme="@style/AppTheme" />
-    <activity android:name="crc6482bd6b2d40628ba8.ChangePasswordActivity" android:configChanges="orientation|screenSize" android:label="@string/app_name" android:theme="@style/AppTheme" />
+    <activity android:name="crc6482bd6b2d40628ba8.ChangePasswordActivity" android:configChanges="orientation|screenSize" android:exported="true" android:label="@string/app_name" android:theme="@style/AppTheme">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
     <activity android:name="crc6482bd6b2d40628ba8.InternshipDetailsActivity" android:configChanges="orientation|screenSize" android:label="@string/app_name" android:theme="@style/AppTheme" />
     <activity android:name="crc64de9b17b706be5f03.ForgetPassword" android:label="ForgetPassword" />
     <activity android:name="crc64a0e0a82d0db9a07d.IntermediateActivity" android:configChanges="orientation|screenSize" />

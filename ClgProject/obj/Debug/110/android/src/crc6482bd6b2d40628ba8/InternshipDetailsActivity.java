@@ -2,7 +2,7 @@ package crc6482bd6b2d40628ba8;
 
 
 public class InternshipDetailsActivity
-	extends android.app.Activity
+	extends androidx.appcompat.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {
@@ -11,6 +11,7 @@ public class InternshipDetailsActivity
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
+			"n_onSupportNavigateUp:()Z:GetOnSupportNavigateUpHandler\n" +
 			"";
 		mono.android.Runtime.register ("ClgProject.InternsFile.InternshipDetailsActivity, ClgProject", InternshipDetailsActivity.class, __md_methods);
 	}
@@ -24,12 +25,28 @@ public class InternshipDetailsActivity
 	}
 
 
+	public InternshipDetailsActivity (int p0)
+	{
+		super (p0);
+		if (getClass () == InternshipDetailsActivity.class)
+			mono.android.TypeManager.Activate ("ClgProject.InternsFile.InternshipDetailsActivity, ClgProject", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
+	}
+
+
 	public void onCreate (android.os.Bundle p0)
 	{
 		n_onCreate (p0);
 	}
 
 	private native void n_onCreate (android.os.Bundle p0);
+
+
+	public boolean onSupportNavigateUp ()
+	{
+		return n_onSupportNavigateUp ();
+	}
+
+	private native boolean n_onSupportNavigateUp ();
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

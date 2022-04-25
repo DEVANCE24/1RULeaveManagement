@@ -9,12 +9,13 @@ namespace ClgProject.InternsFile
     public class ApplyLeaveFragment : Fragment
     {
         private ImageView _imageViewFrom, _imageViewTo;
-        private TextView _textViewFromDate, _textViewToDate;
+        public TextView _textViewFromDate, _textViewToDate;
         private DateFromPickerDialogFragment _dateFromPickerDialoguefragment;
         private DateToPickerDialogFragment _dateToPickerDialoguefragment;
         private readonly string _tag = "Main Activity";
         public EditText editTextleaveApplication;
         public RadioGroup radioGroup;
+        public RadioButton fullday, firsthalf, secondhalf;
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -33,7 +34,11 @@ namespace ClgProject.InternsFile
 
             _imageViewTo = viewApplyLeave.FindViewById<ImageView>(Resource.Id.imageViewToCalender);
             _textViewToDate = viewApplyLeave.FindViewById<TextView>(Resource.Id.textViewToDate);
-            editTextleaveApplication = viewApplyLeave.FindViewById<EditText>(Resource.Id.editTextLeaveApplication);
+            editTextleaveApplication = viewApplyLeave.FindViewById<EditText>(Resource.Id.editTextleaveapplication);
+
+            fullday = viewApplyLeave.FindViewById<RadioButton>(Resource.Id.radioButtonOne);
+            firsthalf = viewApplyLeave.FindViewById<RadioButton>(Resource.Id.radioButtonTwo);
+            secondhalf = viewApplyLeave.FindViewById<RadioButton>(Resource.Id.radioButtonThree);
 
             radioGroup = viewApplyLeave.FindViewById<RadioGroup>(Resource.Id.radioGroup);
 

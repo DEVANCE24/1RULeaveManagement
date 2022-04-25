@@ -3916,100 +3916,103 @@ namespace ClgProject
 			public const int size100 = 2131099864;
 			
 			// aapt resource value: 0x7F0600D9
-			public const int size120 = 2131099865;
+			public const int size12 = 2131099865;
 			
 			// aapt resource value: 0x7F0600DA
-			public const int size15 = 2131099866;
+			public const int size120 = 2131099866;
 			
 			// aapt resource value: 0x7F0600DB
-			public const int size150 = 2131099867;
+			public const int size15 = 2131099867;
 			
 			// aapt resource value: 0x7F0600DC
-			public const int size190 = 2131099868;
+			public const int size150 = 2131099868;
 			
 			// aapt resource value: 0x7F0600DD
-			public const int size20 = 2131099869;
+			public const int size190 = 2131099869;
 			
 			// aapt resource value: 0x7F0600DE
-			public const int size200 = 2131099870;
+			public const int size20 = 2131099870;
 			
 			// aapt resource value: 0x7F0600DF
-			public const int size25 = 2131099871;
+			public const int size200 = 2131099871;
 			
 			// aapt resource value: 0x7F0600E0
-			public const int size30 = 2131099872;
+			public const int size25 = 2131099872;
 			
 			// aapt resource value: 0x7F0600E1
-			public const int size300 = 2131099873;
+			public const int size30 = 2131099873;
 			
 			// aapt resource value: 0x7F0600E2
-			public const int size35 = 2131099874;
+			public const int size300 = 2131099874;
 			
 			// aapt resource value: 0x7F0600E3
-			public const int size380 = 2131099875;
+			public const int size35 = 2131099875;
 			
 			// aapt resource value: 0x7F0600E4
-			public const int size40 = 2131099876;
+			public const int size380 = 2131099876;
 			
 			// aapt resource value: 0x7F0600E5
-			public const int size45 = 2131099877;
+			public const int size40 = 2131099877;
 			
 			// aapt resource value: 0x7F0600E6
-			public const int size50 = 2131099878;
+			public const int size45 = 2131099878;
 			
 			// aapt resource value: 0x7F0600E7
-			public const int size55 = 2131099879;
+			public const int size50 = 2131099879;
 			
 			// aapt resource value: 0x7F0600E8
-			public const int size60 = 2131099880;
+			public const int size55 = 2131099880;
 			
 			// aapt resource value: 0x7F0600E9
-			public const int size600 = 2131099881;
+			public const int size60 = 2131099881;
 			
 			// aapt resource value: 0x7F0600EA
-			public const int size65 = 2131099882;
+			public const int size600 = 2131099882;
 			
 			// aapt resource value: 0x7F0600EB
-			public const int size70 = 2131099883;
+			public const int size65 = 2131099883;
 			
 			// aapt resource value: 0x7F0600EC
-			public const int size75 = 2131099884;
+			public const int size70 = 2131099884;
 			
 			// aapt resource value: 0x7F0600ED
-			public const int size80 = 2131099885;
+			public const int size75 = 2131099885;
 			
 			// aapt resource value: 0x7F0600EE
-			public const int size85 = 2131099886;
+			public const int size80 = 2131099886;
 			
 			// aapt resource value: 0x7F0600EF
-			public const int size90 = 2131099887;
+			public const int size85 = 2131099887;
 			
 			// aapt resource value: 0x7F0600F0
-			public const int size95 = 2131099888;
+			public const int size90 = 2131099888;
 			
 			// aapt resource value: 0x7F0600F1
-			public const int tooltip_corner_radius = 2131099889;
+			public const int size95 = 2131099889;
 			
 			// aapt resource value: 0x7F0600F2
-			public const int tooltip_horizontal_padding = 2131099890;
+			public const int tooltip_corner_radius = 2131099890;
 			
 			// aapt resource value: 0x7F0600F3
-			public const int tooltip_margin = 2131099891;
+			public const int tooltip_horizontal_padding = 2131099891;
 			
 			// aapt resource value: 0x7F0600F4
-			public const int tooltip_precise_anchor_extra_offset = 2131099892;
+			public const int tooltip_margin = 2131099892;
 			
 			// aapt resource value: 0x7F0600F5
-			public const int tooltip_precise_anchor_threshold = 2131099893;
+			public const int tooltip_precise_anchor_extra_offset = 2131099893;
 			
 			// aapt resource value: 0x7F0600F6
-			public const int tooltip_vertical_padding = 2131099894;
+			public const int tooltip_precise_anchor_threshold = 2131099894;
 			
 			// aapt resource value: 0x7F0600F7
-			public const int tooltip_y_offset_non_touch = 2131099895;
+			public const int tooltip_vertical_padding = 2131099895;
 			
 			// aapt resource value: 0x7F0600F8
-			public const int tooltip_y_offset_touch = 2131099896;
+			public const int tooltip_y_offset_non_touch = 2131099896;
+			
+			// aapt resource value: 0x7F0600F9
+			public const int tooltip_y_offset_touch = 2131099897;
 			
 			static Dimension()
 			{

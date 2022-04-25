@@ -15,6 +15,7 @@ using Android.App;
 using Xamarin.Essentials;
 using Android.Graphics;
 using Path = System.IO.Path;
+using ClgProject.InternsFile;
 
 namespace ClgProject
 {

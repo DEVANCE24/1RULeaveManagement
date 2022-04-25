@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace ClgProject
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", MainLauncher = true, Theme = "@style/AppTheme")]
     public class LoginActivity : AppCompatActivity
     {
         private TextInputLayout usernamelyt, passwordlyt;
@@ -21,7 +21,7 @@ namespace ClgProject
         private TextView forget;
         private Button LoginButton;
         private Regex validUsername = new Regex("^[A-Z]+[a-zA-Z]+(@)+[0-9]*$");
-        private string endurl = "api/Login/AuthenticateUser";
+        //private string endurl = "api/Login/AuthenticateUser";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -55,14 +55,9 @@ namespace ClgProject
 
                 Toast.MakeText(this, "LoggedIn Successfully", ToastLength.Short).Show();
                 passwordlyt.Error = null;
-                usernamelyt.Error = null;
-                usernametxt.Text = null;
-                passwordtxt.Text = null;
+                usernamelyt.Error = null;           
 
-                UserLoginModel userLogin = new UserLoginModel();
-                userLogin.UserName = usernametxt.Text;
-                userLogin.Password = passwordtxt.Text;
-                var result = await ApiClass.Post<UserLoginModel>(endurl, userLogin);
+              
                 Intent Dashboard = new Intent(this, typeof(DashboardInterns));
                 StartActivity(Dashboard);
                 usernametxt.Text = null;

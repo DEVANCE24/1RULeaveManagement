@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"ClgProject.dll",
 		"de.hdodenhof.circleimageview.dll",
 		"MPAndroidChart.dll",
+		"Newtonsoft.Json.dll",
 		"Refractored.GifImageView.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",

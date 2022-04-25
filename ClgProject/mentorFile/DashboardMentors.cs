@@ -16,7 +16,7 @@ using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace ClgProject
 { 
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher =false )]
     public class DashboardMentors : AppCompatActivity, IOnNavigationItemSelectedListener
     {
         private BottomNavigationView _bottomNavigationViewMentors;

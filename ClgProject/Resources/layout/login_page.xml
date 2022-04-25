@@ -65,39 +65,61 @@
                 android:layout_width="match_parent"
                 android:text="@string/login"
                 android:layout_below="@+id/view1"
-                android:textSize="@dimen/size30"
+                android:textSize="@dimen/size25"
                 android:layout_height="wrap_content"
-                android:textColor="@color/darkliver"
-                android:textStyle="bold"                
-                />        
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:id="@+id/usernameInputLayout"
-                android:layout_marginTop="@dimen/size30"
-                android:layout_height="wrap_content"
-                >
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/username"
-                    android:textSize="@dimen/size25"
-                    android:id="@+id/usernametxt"
-                    android:drawableStart="@drawable/users"
-                    android:drawablePadding="@dimen/size10"
-                    android:inputType="text" 
-                    android:layout_marginTop="@dimen/size30"
-                    android:backgroundTint="@color/crayola"
-                    android:textColor="@color/darkliver"
-                    android:maxLength="16"
+                android:textColor="@color/darkliver"  
                 />
-            </com.google.android.material.textfield.TextInputLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/size30"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/users"
+                    android:layout_marginTop="@dimen/size20"
+                    android:id="@+id/userimage"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/usernameInputLayout"
+                    android:layout_marginLeft="@dimen/size10"   
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/userimage"
+                    >               
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/username"
+                        android:textSize="@dimen/size15"
+                        android:id="@+id/usernametxt"
+                        android:drawablePadding="@dimen/size10"
+                        android:inputType="text" 
+                        android:layout_marginTop="@dimen/size30"
+                        android:backgroundTint="@color/crayola"
+                        android:textColor="@color/darkliver"
+                        android:maxLength="16"                   
+                    />
+                </com.google.android.material.textfield.TextInputLayout>
+           
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/key"
+                    android:layout_below="@+id/userimage"
+                    android:layout_marginTop="@dimen/size80"
+                    android:id="@+id/keyimage"
+                    />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/size10"  
+                android:layout_below="@+id/usernameInputLayout"
                 android:id="@+id/PasswordInputLayout"
-                android:layout_marginTop="@dimen/size30"
+                    android:layout_marginTop="@dimen/size35"
+                android:layout_toRightOf="@+id/keyimage"
                 android:layout_height="wrap_content"
                 app:passwordToggleEnabled="true">
             
@@ -106,35 +128,36 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/password"
                     android:id="@+id/Passwordtxt"
-                    android:drawableStart="@drawable/key"
-                    android:inputType="textPassword" 
+                    android:inputType="textPassword"
                     android:layout_marginTop="@dimen/size30"
                     android:drawablePadding="@dimen/size10"
-                    android:textSize="@dimen/size25"
+                    android:textSize="@dimen/size15"
                     android:backgroundTint="@color/crayola"
                     android:textColor="@color/darkliver"
                     android:maxLength="12"                
                     />
 
             </com.google.android.material.textfield.TextInputLayout>                     
-
+</RelativeLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/forgotpassword"
                 android:layout_gravity="end"
+                android:textSize="12dp"
                 android:id="@+id/Forgetpasswordtxt"
                 android:textColor="@color/crayola" />            
 
             <com.google.android.material.button.MaterialButton          
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/size60"
+                android:layout_height="@dimen/size65"
                 android:id="@+id/loginButton"
                 android:text="@string/login"
                 android:backgroundTint="@color/crayola"
                 android:textColor="@android:color/white"
                 app:cornerRadius="@dimen/size10"
-                android:layout_marginTop="@dimen/size60"
+                android:layout_marginTop="@dimen/size75"
+                android:textAllCaps="false"
                 />   
        
         

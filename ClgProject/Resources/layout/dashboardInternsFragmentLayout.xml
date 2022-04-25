@@ -3,9 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginTop="60dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,9 +14,10 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewLeaveRequest"
-            android:layout_width="170dp"
-            android:layout_height="130dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             app:cardCornerRadius="10dp"
+            android:padding="10dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/cardViewWfhRequest"
             app:layout_constraintStart_toStartOf="parent">
@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_bluebackground"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
                 android:id="@+id/textViewTotalLeaveRequest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/lightBlue"
                 android:text="20"
@@ -50,7 +50,7 @@
                 app:layout_constraintStart_toStartOf="@+id/progressBarLeaveRequest"
                 app:layout_constraintEnd_toEndOf="@+id/progressBarLeaveRequest"
                 android:layout_marginBottom="5dp"
-                    />
+            />
 
             <ProgressBar
                 android:id="@+id/progressBarLeaveRequest"
@@ -71,9 +71,9 @@
                 android:layout_gravity="bottom"
                 android:text="@string/leaveRequests"
                 android:textSize="16sp"
+                android:layout_marginTop="14dp"
                 android:layout_marginBottom="16dp"
-                android:textStyle="bold"
-                android:textColor="@color/blackColor"
+                android:textColor="@color/lightBlue"
                 android:id="@+id/textViewLeaveRequest"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -85,13 +85,15 @@
 
          <androidx.cardview.widget.CardView
             android:id="@+id/cardViewWfhRequest"
-            android:layout_width="170dp"
-            android:layout_height="130dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
             app:cardCornerRadius="10dp"
-            android:layout_marginLeft="12dp"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toTopOf="@+id/cardViewLeaveRequest"
             app:layout_constraintStart_toEndOf="@+id/cardViewLeaveRequest"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/cardViewLeaveRequest">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -102,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_redbackground"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -141,9 +143,9 @@
                 android:layout_gravity="bottom"
                 android:text="@string/wfhRequests"
                 android:textSize="16sp"
+                android:layout_marginTop="14dp"
                 android:layout_marginBottom="16dp"
-                android:textStyle="bold"
-                android:textColor="@color/blackColor"
+                android:textColor="@color/lightRed"
                 android:id="@+id/textViewWfhRequest"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -155,17 +157,18 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewLeaveStatus"
-            android:layout_width="364dp"
-            android:layout_height="215dp"
-            app:cardCornerRadius="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cardViewLeaveRequest">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
 
 
             <TextView
@@ -174,13 +177,11 @@
                 android:text="@string/leaveStatus"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginRight="204dp"
                 android:textColor="@color/blackColor"
                 android:id="@+id/textViewLeaveStatus"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toTopOf="@id/pieChartLeaveStatus"/>
 
             <com.github.mikephil.charting.charts.PieChart
@@ -188,12 +189,12 @@
                 android:layout_width="130dp"
                 android:layout_height="140dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginBottom="20dp"
                 app:layout_constraintTop_toBottomOf="@+id/textViewLeaveStatus"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imagViewPendingRequest"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
-           
+          
 
                 <ImageView
                     android:layout_width="30dp"
@@ -201,6 +202,7 @@
                     android:src="@drawable/shape_circle_yellow"
                     android:id="@+id/imagViewPendingRequest"
                     android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
                     app:layout_constraintTop_toTopOf="@+id/textViewLeaveStatus"
                     app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatus"
                     app:layout_constraintBottom_toTopOf="@+id/imagViewRejectRequest"
@@ -227,12 +229,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/pendingRequest"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
                     app:layout_constraintTop_toTopOf="@+id/imagViewPendingRequest"
                     app:layout_constraintBottom_toBottomOf="@+id/imagViewPendingRequest"
-                    app:layout_constraintStart_toEndOf="@+id/imagViewPendingRequest"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintStart_toEndOf="@+id/imagViewPendingRequest"/>
 
            
                 <ImageView
@@ -240,11 +242,11 @@
                     android:layout_height="30dp"
                     android:src="@drawable/shape_cirle_red"
                     android:id="@+id/imagViewRejectRequest"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="12dp"
                     app:layout_constraintTop_toBottomOf="@+id/imagViewPendingRequest"
-                    app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatus"
+                    app:layout_constraintStart_toStartOf="@+id/imagViewPendingRequest"
                     app:layout_constraintBottom_toTopOf="@+id/imagViewAcceptedRequest"
-                    app:layout_constraintEnd_toStartOf="@+id/textViewRejectRequest"/>
+                    app:layout_constraintEnd_toEndOf="@+id/imagViewPendingRequest"/>
 
                 <TextView
                     android:id="@+id/textViewTotalRejectRequest"
@@ -266,12 +268,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/rejectRequest"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="12dp"
                     android:textStyle="bold"
                     app:layout_constraintTop_toTopOf="@+id/imagViewRejectRequest"
                     app:layout_constraintBottom_toBottomOf="@+id/imagViewRejectRequest"
-                    app:layout_constraintStart_toEndOf="@+id/imagViewRejectRequest"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintStart_toEndOf="@+id/imagViewRejectRequest"/>
 
      
                 <ImageView
@@ -279,12 +281,10 @@
                     android:layout_height="30dp"
                     android:src="@drawable/shape_circle_green"
                     android:id="@+id/imagViewAcceptedRequest"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginLeft="8dp"
-                    app:layout_constraintTop_toBottomOf="@+id/imagViewRejectRequest"
-                    app:layout_constraintStart_toEndOf="@+id/pieChartLeaveStatus"
-                    app:layout_constraintBottom_toBottomOf="@+id/pieChartLeaveStatus"
-                    app:layout_constraintEnd_toStartOf="@+id/textViewAcceptedRequest"/>
+                    app:layout_constraintTop_toBottomOf="@+id/textViewRejectRequest"
+                    app:layout_constraintStart_toStartOf="@+id/imagViewRejectRequest"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imagViewRejectRequest"/>
                 <TextView
                     android:id="@+id/textViewTotalAcceptedRequest"
                     android:layout_width="wrap_content"
@@ -306,6 +306,7 @@
                     android:text="@string/acceptedRequest"
                     android:textSize="12sp"
                     android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
                     app:layout_constraintTop_toTopOf="@+id/imagViewAcceptedRequest"
                     app:layout_constraintBottom_toBottomOf="@+id/imagViewAcceptedRequest"
                     app:layout_constraintStart_toEndOf="@+id/imagViewAcceptedRequest"
@@ -317,25 +318,25 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardViewListOfHolidays"
             android:layout_width="364dp"
-            android:layout_height="290dp"
-            app:cardCornerRadius="20dp"
+            android:layout_height="180dp"
+            app:cardCornerRadius="10dp"
             android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/cardViewLeaveStatus"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewLeaveStatus"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingHorizontal="24dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/listOfHolidays"
                 android:textSize="16sp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="26dp"
                 android:textStyle="bold"
                 android:textColor="@color/blackColor"
                 android:id="@+id/textViewListOfHolidays"
@@ -346,8 +347,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewHolidayList"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:padding="10dp"
+                android:layout_height="wrap_content"
+                 android:paddingVertical="20dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewListOfHolidays"/>
@@ -355,7 +356,7 @@
 
         </androidx.cardview.widget.CardView>
 
-
+        
 
     </androidx.constraintlayout.widget.ConstraintLayout >
 

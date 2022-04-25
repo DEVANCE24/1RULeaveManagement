@@ -8,19 +8,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/size50"
         android:background="@color/backgroundWhite" >
      
         <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/size120"
-            android:layout_height="@dimen/size120"
+            android:layout_width="@dimen/size110"
+            android:layout_height="@dimen/size110"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/internCardView"
             app:cardCornerRadius="@dimen/size60"
             app:cardElevation="@dimen/size10"
-            android:layout_marginTop="@dimen/size60">
+            android:layout_marginTop="@dimen/size70">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -28,8 +27,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profileImageImageView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/size110"
+                android:layout_height="@dimen/size110"
                 android:src="@drawable/imageProfileInterns"
             />
         </androidx.cardview.widget.CardView>
@@ -42,7 +41,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/internCardView"
-            android:layout_marginTop="@dimen/size60"
+            android:layout_marginTop="@dimen/size50"
             android:id="@+id/internView">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -56,9 +55,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Name"
                     android:id="@+id/internNameTextView"
-                    android:layout_marginTop="@dimen/size70"
-                    android:layout_marginLeft="@dimen/size20"
-                    android:textSize="@dimen/size20"
+                    android:layout_marginTop="@dimen/size65"
+                    android:textSize="@dimen/size22"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Business_Analyst"
                     android:layout_marginTop="@dimen/size35"
-                    android:textSize="@dimen/size15"
+                    android:textSize="@dimen/size13"
                     app:layout_constraintEnd_toEndOf="@+id/internNameTextView"
                     app:layout_constraintStart_toStartOf="@+id/internNameTextView"
                     app:layout_constraintTop_toTopOf="@+id/internNameTextView"
@@ -87,7 +85,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/internBusinessTextView"
                     android:layout_marginTop="@dimen/size25"
-                    android:layout_marginRight="@dimen/size80"
+                    android:layout_marginRight="@dimen/size120"
                     android:id="@+id/interncallImageView"
     />
 
@@ -96,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/MobileNumber"
-                    android:textSize="@dimen/size10"
+                    android:textSize="@dimen/size13"
                     android:layout_marginTop="@dimen/size30"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/interncallImageView"
@@ -112,7 +110,7 @@
                     android:background="@drawable/shape_background_profileicons"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/internNumTextView"
-                    android:layout_marginTop="@dimen/size50"
+                    android:layout_marginTop="@dimen/size55"
                     android:layout_marginLeft="@dimen/size20"
                     android:id="@+id/internDetailsImageView"
     />
@@ -123,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Internship_details"
                     android:textStyle="bold"
-                    android:layout_marginTop="@dimen/size10"
+                    android:layout_marginTop="@dimen/size15"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/internDetailsImageView"
                     app:layout_constraintHorizontal_bias="0.100"
@@ -138,7 +136,7 @@
                     app:layout_constraintTop_toTopOf="@+id/internDetailsImageView"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginRight="@dimen/size20"
-                    android:layout_marginTop="@dimen/size05"
+                    android:layout_marginTop="@dimen/size10"
                     android:id="@+id/interDetailsNextImageView"
     />
 
@@ -148,7 +146,7 @@
                     android:src="@drawable/ic_email_outline"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/interDetailsNextImageView"
-                    android:layout_marginTop="@dimen/size50"
+                    android:layout_marginTop="@dimen/size55"
                     android:layout_marginLeft="@dimen/size20"
                     android:id="@+id/internEmailImageView"
     />
@@ -173,7 +171,7 @@
                     android:background="@drawable/shape_background_profileicons"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/internEmailImageView"
-                    android:layout_marginTop="@dimen/size60"
+                    android:layout_marginTop="@dimen/size65"
                     android:layout_marginLeft="@dimen/size20"
                     android:id="@+id/internUserImageView"
     />
@@ -197,7 +195,7 @@
                     android:src="@drawable/ic_change_password"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/internUserTextView"
-                    android:layout_marginTop="@dimen/size50"
+                    android:layout_marginTop="@dimen/size55"
                     android:layout_marginLeft="@dimen/size20"
                     android:id="@+id/internChangePassImageView"
     />
@@ -208,7 +206,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/Change_Password"
                     android:textStyle="bold"
-                    android:layout_marginTop="@dimen/size10"
+                    android:layout_marginTop="@dimen/size15"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/internChangePassImageView"
                     app:layout_constraintHorizontal_bias="0.100"
@@ -222,7 +220,7 @@
                     app:layout_constraintTop_toTopOf="@+id/internChangePassImageView"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginRight="@dimen/size20"
-                    android:layout_marginTop="@dimen/size05"
+                    android:layout_marginTop="@dimen/size10"
                     android:id="@+id/internChangePassNextImageView"
     />
 
@@ -232,7 +230,7 @@
                     android:src="@drawable/ic_logout"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/internChangePassImageView"
-                    android:layout_marginTop="@dimen/size60"
+                    android:layout_marginTop="@dimen/size65"
                     android:layout_marginLeft="@dimen/size20"
                     android:id="@+id/internLogoutImageView"
     />

@@ -2,7 +2,7 @@ package crc6482bd6b2d40628ba8;
 
 
 public class ChangePasswordActivity
-	extends android.app.Activity
+	extends androidx.appcompat.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {
@@ -21,6 +21,14 @@ public class ChangePasswordActivity
 		super ();
 		if (getClass () == ChangePasswordActivity.class)
 			mono.android.TypeManager.Activate ("ClgProject.InternsFile.ChangePasswordActivity, ClgProject", "", this, new java.lang.Object[] {  });
+	}
+
+
+	public ChangePasswordActivity (int p0)
+	{
+		super (p0);
+		if (getClass () == ChangePasswordActivity.class)
+			mono.android.TypeManager.Activate ("ClgProject.InternsFile.ChangePasswordActivity, ClgProject", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
 	}
 
 

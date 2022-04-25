@@ -1,5 +1,5 @@
 <resources>
-	<string name="app_name">LoginPage</string>
+	<string name="app_name"></string>
 	<string name="action_settings">Settings</string>
 	<string name="login">Login</string>
 	<string name="username">Username</string>
@@ -10,7 +10,7 @@
 	<string name="forgotText">Enter your email and we"'"ll send you a link to</string>
 	<string name="forgotText2">reset your password.</string>
 	<string name="enterEmail">Enter Your Email</string>
-	<string name="Buttonsend">Send</string>
+	<string name="Buttonsubmit">Submit</string>
 	<string name="didnotreceived">Didn"'"t received a link"?"</string>
 	<string name="resend">Resend</string>
 	<string name="dashboard">Dashboard</string>
@@ -25,6 +25,8 @@
 	<string name="lessLeaves">Intern who has asked less leaves</string>
 	<string name="request">Requests</string>
 
+	<string name="applyLeave">Apply Leave</string>
+
 	<string name="revokeRequest">Revoke Request</string>
 
 	<string name="revokeQuestion">Are you sure you want to revoke the request"?"</string>
@@ -36,8 +38,6 @@
 	<string name="loginString">Login</string>
 
 	<string name="typeReason">Type Your Reason For Leave</string>
-
-	<string name="applyLeave">Apply Leave</string>
 
 	<string name="fullDay">Full Day</string>
 
@@ -72,6 +72,8 @@
 	<string name="InternEmailAddress">sarapaul@1rivet.com</string>
 
 	<string name="InternUsername">sarapaul@12345</string>
+
+	<string name="Change_password">Change password</string>
 
 	<string name="Internlog_out">Log out</string>
 
